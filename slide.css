@@ -1,0 +1,330 @@
+
+.MultiCarousel, .MultiCarousel-kegitan  { float: left; overflow: hidden; width: 100%; position:relative;background-color: 'red';justify-content:'center';align-items: 'center';}
+.MultiCarousel .item { float: left;}
+.MultiCarousel .item > div { text-align: center; width: 230px;background-color:'red'; height: 230px; background: #F9FAFB; color:#666;border-radius: 30px 30px 30px 0px;}
+.MultiCarousel .item > div > img {object-fit: contain;margin-bottom: 12px;}
+.MultiCarousel .item > div > p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #422C18;
+    text-transform: uppercase;
+}
+
+.no-urut{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-urut-title{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    color: #FFF8EE;
+}
+
+.kotak-title{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    color: #422C18;
+}
+
+.kotak-subtitle{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #1D3547;
+}
+
+.icon-banner{
+    position: absolute;
+    right: 40px;
+    top: 20px;
+}
+
+.icon-banner > img{
+    object-fit: contain;
+    width: 450px;
+    height: 450px;
+}
+
+.slide_kegiatan{
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.slide_kegiatan > div{
+    float: left;
+    margin: 30px;
+    width: 300px; 
+    height: 470px; 
+    background: #F5F6F8; 
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide_kegiatan > div > img{
+    width: 320px;
+    height: 470px; 
+    object-fit: cover;
+}
+
+.slide_kegiatan > div > .deskripsi{
+    width: 199px;
+    height: 170px;
+    background: rgba(255, 248, 238, 0.8);
+    backdrop-filter: blur(31px);
+    border-radius: 20px;
+    padding: 14px 44px 18px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.slide_kegiatan > div > .deskripsi > div > .judul{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: #828960;
+}
+
+.slide_kegiatan > div > .deskripsi > div > .tanggal{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #9395A0;
+}
+
+.slide_kegiatan > div > .deskripsi > .keterangan{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #404852;
+}
+
+.banner-covid{
+    width: 100%;
+    height: 363px;
+    position: relative;
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px)  
+{
+    .icon-banner{
+        position: absolute;
+        right: 10px;
+        top: 20px;
+    }
+
+    .icon-banner > img{
+        width: 400px;
+        height: 400px;
+    }
+
+    .slide_kegiatan > div > img{
+        width: 220px;
+        height: 350px; 
+    }
+    
+
+    .slide_kegiatan > div{
+        width: 220px;
+        height: 350px;
+    }
+
+    .slide_kegiatan > div > .deskripsi{
+        width: 150px;
+        height: 130px;
+      
+    }
+    
+    .slide_kegiatan > div > .deskripsi > div > .judul{
+        font-size: 12px;
+        line-height: 12px;
+
+    }
+    
+    .slide_kegiatan > div > .deskripsi > div > .tanggal{
+        font-size: 11px;
+    }
+    
+    .slide_kegiatan > div > .deskripsi > .keterangan{
+        font-size: 11px;
+        line-height: 12px;
+    }
+
+}
+
+@media only screen and (min-width: 1030px) and (max-width: 1366px)  
+{
+    .icon-banner{
+        position: absolute;
+        right: 10px;
+        top: 20px;
+    }
+
+    .icon-banner > img{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    .MultiCarousel .item > div {
+        margin: 20px;
+    }
+
+    .icon-banner{
+        position: absolute;
+        right: 10px;
+        top: 20px;
+    }
+
+    .icon-banner > img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .slide_kegiatan > div > img{
+        width: 220px;
+        height: 350px; 
+    }
+    
+
+    .slide_kegiatan > div{
+        width: 220px;
+        height: 350px;
+    }
+
+    .slide_kegiatan > div > .deskripsi{
+        width: 150px;
+        height: 130px;
+      
+    }
+    
+    .slide_kegiatan > div > .deskripsi > div > .judul{
+        font-size: 12px;
+        line-height: 12px;
+
+    }
+    
+    .slide_kegiatan > div > .deskripsi > div > .tanggal{
+        font-size: 11px;
+    }
+    
+    .slide_kegiatan > div > .deskripsi > .keterangan{
+        font-size: 11px;
+        line-height: 12px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .MultiCarousel .item > div {
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .slide_kegiatan > div > img{
+        width: 220px;
+        height: 250px; 
+    }
+    
+
+    .slide_kegiatan > div{
+        margin: 0;
+        width: 220px;
+        height: 250px;
+    }
+
+    .slide_kegiatan > div > .deskripsi{
+        width: 150px;
+        height: 130px;
+      
+    }
+    
+    .slide_kegiatan > div > .deskripsi > div > .judul{
+        font-size: 12px;
+        line-height: 12px;
+
+    }
+    
+    .slide_kegiatan > div > .deskripsi > div > .tanggal{
+        font-size: 11px;
+    }
+    
+    .slide_kegiatan > div > .deskripsi > .keterangan{
+        font-size: 11px;
+        line-height: 12px;
+    }
+
+    .icon-banner{
+        display: block;
+        right: 0px;
+        top: 40px;
+    }
+
+    .icon-banner > img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .no-urut{
+        width: 100px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .no-urut-title{
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        color: #FFF8EE;
+    }
+}
+
+@media (max-width: 375px){
+    .banner_covid{
+        width: 100%;
+        height: 170px;
+    }
+}
+
+@media (max-width: 320px) {
+    .icon-banner{
+        display: block;
+        right: 0px;
+        top: 100px;
+    }
+
+    .icon-banner > img{
+        width: 150px;
+        height: 150px;
+    }
+}

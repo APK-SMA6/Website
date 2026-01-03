@@ -1,0 +1,66 @@
+.section_title{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 0.6px;
+    margin-right: 5px;
+    color: #422C18;
+}
+
+.section_subtitle{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 0.6px;
+    color: #848C2F; 
+}
+
+.section_kotak{
+    width: 50%;
+}
+
+.section_description{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.346154px;
+    color: #404852;
+}
+
+.section_nav{
+    width: 48px;
+    height: 48px;
+    background: #FCC044;
+    border: none;
+}
+
+.section_nav.over{
+    opacity: 0.3;    
+    background: #FFB435;
+    pointer-events: none;
+}
+
+  
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    
+    .section_kotak > .section_description{
+        max-width: 60%;
+    }
+    
+    .section_title{
+        font-size: 18px;
+    }
+    
+    .section_subtitle{
+        font-size: 18px;
+    }
+
+    .section_kotak{
+        width: 100%;
+    }
+}

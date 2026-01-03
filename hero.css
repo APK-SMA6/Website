@@ -1,0 +1,137 @@
+.jumbotron.jumbotron_hero{
+    background-size: cover;
+    height: 700px;
+    position: relative;
+    margin-bottom: 0px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center right;
+}
+
+.jumbotron.jumbotron_information{
+    margin-top: 0px;
+    position: relative;
+    background-color: #FCC044;
+}
+
+.hero-overlay{
+    z-index: 1;
+    position: absolute;
+    height: 600px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* .hero-title{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.hero-subtitle{
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.5;
+} */
+
+.btn.btn-hero-daftar{
+    background: #848C2F;
+    border-radius: 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 10px 30px;
+}
+
+.information_title{
+    width: 80%;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: left;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+}
+
+.card_info{
+    width: 140px;
+    height: 140px;
+    background-color: #EEAD2E;
+    border: none;
+    border-radius: 20px;
+}
+
+.infotmation_nilai{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.infotmation_nilai_title{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+@media screen and (min-width: 601px) {
+    .hero-title{
+        width: 100%;
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    .hero-subtitle{
+        width: 100%;
+        font-size: 15px;
+        line-height: 28px;
+    }
+  }
+
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    .jumbotron.jumbotron_hero{
+        height: 400px;
+    }
+    .hero-overlay{
+        height: 400px;
+    }
+
+    .hero-title{
+        width: 95%;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .information_title{
+        width: 100%;
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .hero-subtitle{
+        width: 80%;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .card_info{
+        margin-bottom: 20px;
+    }
+  }

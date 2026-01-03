@@ -1,0 +1,115 @@
+.listFooter ul{
+    padding-left: 0px;
+}
+.listFooter ul li{
+    list-style: none;
+    color: white;
+    margin-bottom: 5px;
+}
+.listFooter ul li a{
+    text-decoration: none;
+    color: white;
+}
+footer{
+    background-color: #069550;
+    padding : 40px
+}
+footer h3{
+    color: white;
+}
+footer .descript{
+    color: white;
+}
+.btn-daftar{
+    border-radius: 50px;
+    background-color:#069550 ;
+    color: white;
+}
+.navbar-light .nav-item > .nav-link.active  {
+    color:#069550;
+    border-bottom: #069550 solid 2px ;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+.scroll {
+            color: #fff;
+            margin-top: 100px
+        }
+
+        #toTopBtn {
+            position: fixed;
+            bottom: 26px;
+            right: 39px;
+            z-index: 98;
+            padding: 21px;
+            background-color: rgba(106, 255, 101, 0.8)
+        }
+
+        .js .cd-top--fade-out {
+            opacity: .5
+        }
+
+        .js .cd-top--is-visible {
+            visibility: visible;
+            opacity: 1
+        }
+
+        .js .cd-top {
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity .3s, visibility .3s, background-color .3s
+        }
+
+        .cd-top {
+            position: fixed;
+            bottom: 20px;
+            bottom: var(--cd-back-to-top-margin);
+            right: 20px;
+            right: var(--cd-back-to-top-margin);
+            display: inline-block;
+            height: 40px;
+            height: var(--cd-back-to-top-size);
+            width: 40px;
+            width: var(--cd-back-to-top-size);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .05) !important;
+            background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1571057658/cd-top-arrow.svg) no-repeat center 50%;
+            background-color: rgba(248, 177, 71, 0.8);
+            background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8)
+        }
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-whatsapp {
+    background: #25D366;
+    color: white;
+}
