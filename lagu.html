@@ -1,0 +1,828 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- CSRF Token -->
+    <meta name="csrf-token" content="WuUPv96yNsKrUmZkzZd8i8b526Qi8so5zQ18UkfG">
+
+    <title>Ambalan Prabu Krisna</title>
+    <link rel="shortcut icon" href="https://uploads.onecompiler.io/448xahbqy/448xahfht/Desain%20tanpa%20judul%20(6).png" type="image/png"/>
+
+    <!--Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
+    
+    <link rel="stylesheet" href="main.css">
+    <style>
+   
+        .scroll {
+            color: #fff;
+            margin-top: 100px
+        }
+
+        #toTopBtn {
+            position: fixed;
+            bottom: 26px;
+            right: 39px;
+            z-index: 98;
+            padding: 21px;
+            background-color: rgba(106, 255, 101, 0.8)
+        }
+
+        .js .cd-top--fade-out {
+            opacity: .5
+        }
+
+        .js .cd-top--is-visible {
+            visibility: visible;
+            opacity: 1
+        }
+
+        .js .cd-top {
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity .3s, visibility .3s, background-color .3s
+        }
+
+        .cd-top {
+            position: fixed;
+            bottom: 20px;
+            bottom: var(--cd-back-to-top-margin);
+            right: 20px;
+            right: var(--cd-back-to-top-margin);
+            display: inline-block;
+            height: 40px;
+            height: var(--cd-back-to-top-size);
+            width: 40px;
+            width: var(--cd-back-to-top-size);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .05) !important;
+            background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1571057658/cd-top-arrow.svg) no-repeat center 50%;
+            background-color: rgba(248, 177, 71, 0.8);
+            background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8)
+        }
+
+        
+        .container{
+    max-width:1200px;
+    width:100%;
+    margin:auto;
+}
+
+.header{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.header h1{
+    color:#2c3e50;
+}
+/* GRID ASLI */
+.darma-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(450px,1fr));
+    gap:25px;
+}
+
+/* CARD */
+.card{
+    background:#fff;
+    border:1px solid #eee;
+    border-radius:12px;
+    padding:25px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+    .darma-grid{grid-template-columns:1fr;}
+}
+
+
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            border-color: #d1d8e0;
+        }
+
+        /* Icon Container */
+        .icon-box {
+            min-width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            font-size: 22px;
+        }
+
+        /* Content Text */
+        .content h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.15rem;
+            line-height: 1.3;
+        }
+
+        .content p {
+            color: #555;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* Warna-warni Ikon (Variasi) */
+        .bg-1 { background-color: #e3f2fd; color: #1976d2; } /* Biru */
+        .bg-2 { background-color: #e8f5e9; color: #388e3c; } /* Hijau */
+        .bg-3 { background-color: #fff3e0; color: #f57c00; } /* Oranye */
+        .bg-4 { background-color: #f3e5f5; color: #7b1fa2; } /* Ungu */
+        .bg-5 { background-color: #ffebee; color: #d32f2f; } /* Merah */
+        .bg-6 { background-color: #e0f2f1; color: #00796b; } /* Toska */
+        .bg-7 { background-color: #fffde7; color: #fbc02d; } /* Kuning */
+        .bg-8 { background-color: #efebe9; color: #5d4037; } /* Cokelat */
+        .bg-9 { background-color: #eceff1; color: #455a64; } /* Abu-abu */
+        .bg-10 { background-color: #fce4ec; color: #c2185b; } /* Pink */
+
+        /* Responsive Mobile */
+        @media (max-width: 600px) {
+            .darma-grid {
+                grid-template-columns: 1fr;
+            }
+            .card {
+                padding: 20px;
+            }
+            .icon-box {
+                min-width: 45px;
+                height: 45px;
+                font-size: 18px;
+                margin-right: 15px;
+            }
+        }
+
+        /* PERBAIKAN STRUKTUR ORGANISASI & GARIS PRESISI */
+        .org-section {
+            margin-bottom: 100px;
+            position: relative;
+            padding-top: 20px;
+        }
+
+        .struktur-foto-wrapper{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:40px;
+}
+
+.struktur-foto{
+    max-width:100%;
+    width:900px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.struktur-foto:hover{
+    transform:scale(1.02);
+}
+
+@media(max-width:768px){
+    .struktur-foto{width:100%;}
+}
+
+        /* Gradasi Warna Sesuai Gambar */
+        .box-green { background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%); }
+        .box-blue { background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%); }
+        .box-grey { background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); }
+
+        .org-box span { display: block; font-weight: 800; font-size: 0.95rem; color: #222; }
+        .org-box p { font-size: 0.85rem; color: #444; margin-top: 3px; }
+
+        /* SISTEM GARIS PRESISI */
+        /* Garis Vertikal Tengah */
+        .line-v-center {
+            position: absolute;
+            width: 2px;
+            background: #222;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        /* Garis Horizontal untuk Cabang */
+        .line-h-branch {
+            position: absolute;
+            height: 2px;
+            background: #222;
+            top: 50%;
+            z-index: 1;
+        }
+
+        /* Garis Vertikal Kecil ke Setiap Box */
+        .line-to-box {
+            position: absolute;
+            width: 2px;
+            height: 20px;
+            background: #222;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+        .line-to-box.top { top: -20px; }
+        .line-to-box.bottom { bottom: -20px; }
+
+        @media (max-width: 850px) {
+            .org-row { flex-wrap: wrap; gap: 20px; }
+            .line-h-branch, .line-v-center { display: none; }
+            .darma-grid { grid-template-columns: 1fr; }
+        }
+        
+        footer {
+            background-color: #000; /* Warna hitam sesuai gambar */
+            color: #ffffff;
+            padding: 60px 20px 30px 20px;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        .footer-main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            align-items: center;
+        }
+
+        .footer-logo-section {
+            text-align: center;
+        }
+
+        .footer-logo-section img {
+            max-width: 340px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .footer-logo-section span {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+            letter-spacing: 2px;
+            color: #aaa;
+        }
+
+        .footer-address h3 {
+            font-size: 16px;
+            font-weight: normal;
+            margin-bottom: 15px;
+        }
+
+        .footer-address p {
+            margin: 4px 0;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #ccc;
+        }
+
+        .footer-map img {
+            max-width: 300px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .footer-bottom {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 40px;
+    margin: 0 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background: #444;
+}
+
+/* ====== TAMBAHAN ICON STYLE ====== */
+
+.social-icons a.tiktok {
+    background:#010101;
+}
+
+.social-icons a.instagram {
+    background: linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
+}
+
+.social-icons a.youtube {
+    background:#ff0000;
+}
+        
+        /* CSS TAMBAHAN UNTUK SPLASH SCREEN */
+        #splash-screen {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 1s ease-out, visibility 1s;
+        }
+        #splash-screen img {
+            width: 150px;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+        #splash-screen h2 {
+            font-family: 'Inter', sans-serif;
+            color: #069550;
+            font-weight: 700;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-20px);}
+            60% {transform: translateY(-10px);}
+        }
+        .fade-out {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .copyright {
+            font-size: 12px;
+            color: #555;
+        }
+        
+        .category-filter {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            border: 2px solid var(--primary-color);
+            background: transparent;
+            color: var(--primary-color);
+            padding: 8px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        /* Card Berita */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            padding-bottom: 50px;
+        }
+
+        .news-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: 0.3s;
+            border: 1px solid #eee;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .news-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .news-img-wrapper {
+            position: relative;
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .news-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        .news-card:hover .news-img-wrapper img {
+            transform: scale(1.1);
+        }
+
+        .news-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: var(--primary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .news-content {
+            padding: 25px;
+            flex-grow: 1;
+        }
+
+        .news-date {
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        .news-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .news-excerpt {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .read-more-btn {
+            color: var(--primary-color);
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            transition: 0.2s;
+        }
+
+        .read-more-btn i {
+            margin-left: 8px;
+            transition: 0.2s;
+        }
+
+        .read-more-btn:hover {
+            color: #046b3a;
+            text-decoration: none;
+        }
+
+        .read-more-btn:hover i {
+            transform: translateX(5px);
+        }
+
+        * Lirik */
+    .lyrics h3 {
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .lyrics p {
+        line-height: 1.8;
+        white-space: pre-line;
+        font-size: 15px;
+    }
+
+    /* Audio */
+    .player {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: flex-start;
+    }
+
+    audio {
+        width: 100%;
+    }
+
+
+    /* Footer button */
+    .footer {
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .back-btn {
+        padding: 10px 20px;
+        border: 1px solid #aaa;
+        background: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    .back-btn:hover {
+        background: #eee;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            grid-template-columns: 1fr;
+        }
+    }
+    </style>
+
+          </style>
+        <link rel="stylesheet" href="slide.css" />
+    <link rel="stylesheet" href="hero.css" />
+    <link rel="stylesheet" href="body.css" />
+    <link rel="stylesheet" href="section.css" />
+    <link rel="stylesheet" href="magnific-popup.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="magnify.css">
+
+
+</head>
+<body >
+  
+    
+    <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
+        <div class="loading" style="display: none;"></div>
+        <header>
+            <div class="container px-2 px-lg-5">
+                <nav class="navbar navbar-expand-lg navbar-light justify-content-between py-4 px-0">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a>
+                        <img src="https://uploads.onecompiler.io/448xahbqy/448xahfht/Desain%20tanpa%20judul%20(6).png" width="50" height="50" class="d-inline-block align-top" alt="">
+                    </a>
+
+                    <div class="collapse navbar-collapse" style="flex-grow : 0;" id="navbarNav" >
+
+                            <ul class="navbar-nav" id="myNavbar">
+    <li class="nav-item px-3 ">
+        <a class="nav-link" href="index.html">Home</a>
+    </li>
+
+    <li class="nav-item px-3">
+        <a class="nav-link" href="index.html">Tokoh Inspiratif</a>
+    </li>
+    <li class="nav-item px-3">
+        <a class="nav-link" href="index.html">Dasa Darma</a>
+    </li>
+    <li class="nav-item px-3">
+        <a class="nav-link" href="index.html">Struktur</a>
+    </li>
+    <li class="nav-item px-3">
+        <a class="nav-link" href="index.html">Berita</a>
+    </li>
+    <li class="nav-item px-3">
+        <a class="nav-link" href="lagu.html">Lagu</a>
+    </li>
+</ul>
+
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+</section>
+
+
+<!-- Content -->
+<div class="container">
+  
+  
+      <!-- Player -->
+    <div class="player">
+      <h3>Mars Pramuka</h3>
+        <audio controls>
+            <source src="https://pramuka.or.id/files/lagu/Mars-Jayalah-Pramuka.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Lirik -->
+    <div class="lyrics">
+        <h3>🎵 LIRIK</h3>
+<p>Gerakan Pramuka Praja Muda Karana</p>
+<p>Sebagai wahana kaum muda suka berkarya</p>
+<p>Kader pembangunan sebagai perekat bangsa</p>
+<p>Disiplin berani dan setia berakhlak mulia</p>
+<p>Bersatu padu menyongsong masa depan yang gemilang</p>
+<p>Satu pramuka untuk satu Indonesia</p>
+<p>Melangkah maju menuju masyarakat yang sentosa</p>
+<p>Jayalah Pramuka Jayalah Indonesia</p>
+    </div>
+
+  <!-- Player -->
+    <div class="player">
+      <h3>Hymne Pramuka</h3>
+        <audio controls>
+            <source src="https://pramuka.or.id/files/lagu/Hymne-Satya-Darma-Pramuka.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Lirik -->
+    <div class="lyrics">
+        <h3>🎵 LIRIK</h3>
+<p>Kami pramuka Indonesia</p>
+<p>Manusia pancasila</p>
+<p>Satyaku kudharmakan</p>
+<p>Dharmaku kubaktikan</p>
+<p>Agar jaya Indonesia</p>
+<p>Indonesia tanah airku</p>
+<p>Kami jadi pandu mu</p>
+
+    </div>
+    
+
+</div>
+
+        </main>
+        <div style="height: 15px; background-color:lightgrey "></div>
+        <footer>
+        <div class="container">
+            <div class="footer-main">
+                
+                <div class="footer-logo-section">
+                    <img src="https://uploads.onecompiler.io/448xahbqy/4493ucz5y/ChatGPT%20Image%20Dec%2030,%202025,%2012_20_52%20PM.png" alt="Pusdatin Logo">
+                </div>
+
+                <div class="footer-address">
+                    <h3>Sanggar :</h3>
+                    <p>SMAN 6 Kota Madiun</p>
+                    <p>Jl. Suhud Nosingo, Mojorejo,</p>
+                    <p> Kec. Taman, Kota Madiun, Jawa Timur 63139</p>
+                </div>
+
+                <div class="footer-map">
+                    <img src="https://uploads.onecompiler.io/448xahbqy/4493ucz5y/PRABU%20KRISNA%20(2).png">
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+        <!-- BUTTON SOSIAL MEDIA -->
+        <div class="social-icons">
+            
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@ambalanprabukrisna3?_r=1&_t=ZS-92l0wEbeqxh" target="_blank" class="tiktok">
+                <svg viewBox="0 0 48 48" width="22" height="22" style="margin-top:9px;">
+                    <path fill="#fff" d="M31 6c1 3 3 5 6 6v6c-2 0-4-1-6-2v11c0 6-5 11-11 11S9 33 9 27s5-11 11-11h1v6h-1c-3 0-5 2-5 5s2 5 5 5 5-2 5-5V6h7z"/>
+                </svg>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/ambalanprabukrisnasmasix?igsh=MXB4ZjczbTlnejQ2eA==" target="_blank" class="instagram">
+                <svg viewBox="0 0 48 48" width="22" height="22" style="margin-top:9px;">
+                    <path fill="#fff" d="M24 15a9 9 0 1 0 0 18 9 9 0 0 0 0-18zm0-5c3 0 3 0 4 0 4 0 6 2 7 3 1 1 3 3 3 7 0 1 0 1 0 4s0 3 0 4c0 4-2 6-3 7-1 1-3 3-7 3-1 0-1 0-4 0s-3 0-4 0c-4 0-6-2-7-3-1-1-3-3-3-7 0-1 0-1 0-4s0-3 0-4c0-4 2-6 3-7 1-1 3-3 7-3 1 0 1 0 4 0zm8-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+                </svg>
+            </a>
+
+            <!-- YouTube -->
+            <a href="https://www.youtube.com/@ambalanprabukrisna1811" target="_blank" class="youtube">
+                <svg viewBox="0 0 48 48" width="22" height="22" style="margin-top:9px;">
+                    <path fill="#fff" d="M43 16s0-5-3-7c-3-2-14-2-14-2s-11 0-14 2c-3 2-3 7-3 7s0 5 3 7c3 2 14 2 14 2s11 0 14-2c3-2 3-7 3-7zM20 28V18l10 5-10 5z"/>
+                </svg>
+            </a>
+
+        </div>
+
+        <p>© 2026 Ambalan Prabu Krisna</p>
+    </div>
+        </div>
+    </footer>
+        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function() {
+            $(window).scroll(function() {
+            if ($(this).scrollTop() > 20) {
+            $('#toTopBtn').fadeIn();
+            } else {
+            $('#toTopBtn').fadeOut();
+            }
+            });
+
+            $('#toTopBtn').click(function() {
+            $("html, body").animate({
+            scrollTop: 0
+            }, 1000);
+            return false;
+            });
+            });
+
+            $(document).ready(function(){
+            $('body').scrollspy({target: ".navbar", offset: 50});
+
+            $("#myNavbar a").on('click', function(event) {
+                if (this.hash !== "") {
+
+                event.preventDefault();
+                $('.navbar-nav .nav-link').removeClass('active');
+                $(this).addClass('active');
+
+                var hash = this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+                    window.location.hash = hash;
+                });
+                }
+            });
+            });
+        </script>
+        
+        <script>
+            $(window).on('load', function() {
+                setTimeout(function() {
+                    $('#splash-screen').addClass('fade-out');
+                }, 3000);
+            });
+        </script>
+
+            <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="home.js"></script>
+    <script src="magnify.js"></script>
+    <script>
+
+
+
+        //get Data Nilai
+        let nilaiFull = []
+        $.ajax({
+        url: url+ '/nilai-pramuka',
+        type: "GET",
+        success: function(data) {
+            nilaiFull = data.data
+            makeNilai(nilaiFull)
+        },
+        error: function(data) {
+            console.log(error.message)
+        }
+        });
+
+        //get Data Nilai
+        let beritaFull = []
+        $.ajax({
+        url: url+ '/berita',
+        type: "GET",
+        success: function(data) {
+            beritaFull = data.data
+            let beritaData = beritaFull.slice(0,3)
+            makeBerita(beritaData)
+        },
+        error: function(data) {
+            console.log(error.message)
+        }
+        });
+
+    </script>
+
+
+</body>
+</html>
